@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+::selection {
+  background-color: #005f008d;
+  color: #ffefef;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4ecec;
+}
+nav {
+  background-color: black;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+}
+nav ul {
+  display: flex;
+  gap: 1.8rem;
+  list-style: none;
+}
+nav li {
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0.2);
+  padding: 10px 20px;
+  border-radius: 52px;
+}
+.active {
+  cursor: pointer;
+  background-color: rgba(0, 255, 255, 0.25);
+  border-radius: 52px;
+  box-shadow: 0 0 20px rgba(220, 220, 220, 0.5);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+th,
+td {
+  border: 1px solid #c2bfbf;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #c8e7e4;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+th {
+  background-color: #008304;
+  color: white;
+}
+.actionBtns {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+.btn {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: #ddd;
+  border: 1px solid #0000009f;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+.btn-primary {
+  background-color: #005cbed7;
+  color: white;
+}
+.btn-danger {
+  background-color: #ff0000;
+  color: white;
+}
+.btn-info {
+  background-color: #ffa200;
+  color: white;
+}
+
+.container {
+  margin: auto;
+  margin-top: 30px;
+  padding: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(10, 79, 128, 0.4);
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+input.error {
+  border-color: red;
+}
+
+.error-msg {
+  color: red;
+  font-size: 12px;
+}
+.btn-lg {
+  font-size: 1.3rem !important;
+  padding: 5px 30px !important;
+}
+.main{
+  min-height: 83vh;
+}
+.hcontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.content {
+  text-align: center;
+}
+.hcontainer img {
+  width: 50%;
+  mix-blend-mode: multiply;
+  object-fit: cover;
+}
+.floating-images {
+  pointer-events: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.floating-images img {
+  animation: floating 5s infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+footer{
+  padding: 15px 20px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
